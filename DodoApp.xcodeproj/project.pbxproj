@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		14B472A12C28688B0058639D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B472A02C28688B0058639D /* AppDelegate.swift */; };
 		14B472A32C28688C0058639D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B472A22C28688C0058639D /* SceneDelegate.swift */; };
-		14B472A52C28688C0058639D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B472A42C28688C0058639D /* ViewController.swift */; };
+		14B472A52C28688C0058639D /* MenuScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B472A42C28688C0058639D /* MenuScreenVC.swift */; };
 		14B472A82C28688C0058639D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 14B472A72C28688C0058639D /* Base */; };
 		14B472AA2C28688F0058639D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B472A92C28688F0058639D /* Assets.xcassets */; };
 		14B472AD2C28688F0058639D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 14B472AC2C28688F0058639D /* Base */; };
+		14B472B92C29395F0058639D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B472B82C29395F0058639D /* ProductCell.swift */; };
+		14B472BC2C29399C0058639D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B472BB2C29399C0058639D /* Product.swift */; };
+		14B472BF2C2939CB0058639D /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B472BE2C2939CB0058639D /* ProductsService.swift */; };
+		14B472C32C293E060058639D /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B472C22C293E060058639D /* UIView+Shadow.swift */; };
+		14B472C52C293E230058639D /* UITableView+reuseID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B472C42C293E230058639D /* UITableView+reuseID.swift */; };
+		14B472C72C293E550058639D /* UITableView+dequeueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B472C62C293E550058639D /* UITableView+dequeueCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14B4729D2C28688B0058639D /* DodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B472A02C28688B0058639D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14B472A22C28688C0058639D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		14B472A42C28688C0058639D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14B472A42C28688C0058639D /* MenuScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreenVC.swift; sourceTree = "<group>"; };
 		14B472A72C28688C0058639D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14B472A92C28688F0058639D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14B472AC2C28688F0058639D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14B472AE2C28688F0058639D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B472B82C29395F0058639D /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		14B472BB2C29399C0058639D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		14B472BE2C2939CB0058639D /* ProductsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsService.swift; sourceTree = "<group>"; };
+		14B472C22C293E060058639D /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		14B472C42C293E230058639D /* UITableView+reuseID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+reuseID.swift"; sourceTree = "<group>"; };
+		14B472C62C293E550058639D /* UITableView+dequeueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+dequeueCell.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,85 @@
 		14B4729F2C28688B0058639D /* DodoApp */ = {
 			isa = PBXGroup;
 			children = (
+				14B472B42C2938B50058639D /* App */,
+				14B472B52C2938ED0058639D /* Screens */,
+				14B472BA2C29396A0058639D /* Models */,
+				14B472BD2C2939B20058639D /* Services */,
+				14B472C12C293DB60058639D /* Extensions */,
+				14B472C02C2939D60058639D /* Resources */,
+			);
+			path = DodoApp;
+			sourceTree = "<group>";
+		};
+		14B472B42C2938B50058639D /* App */ = {
+			isa = PBXGroup;
+			children = (
 				14B472A02C28688B0058639D /* AppDelegate.swift */,
 				14B472A22C28688C0058639D /* SceneDelegate.swift */,
-				14B472A42C28688C0058639D /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		14B472B52C2938ED0058639D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				14B472B62C29392B0058639D /* Menu */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		14B472B62C29392B0058639D /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				14B472A42C28688C0058639D /* MenuScreenVC.swift */,
+				14B472B72C29393D0058639D /* Cells */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		14B472B72C29393D0058639D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				14B472B82C29395F0058639D /* ProductCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		14B472BA2C29396A0058639D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14B472BB2C29399C0058639D /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		14B472BD2C2939B20058639D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				14B472BE2C2939CB0058639D /* ProductsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		14B472C02C2939D60058639D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				14B472A62C28688C0058639D /* Main.storyboard */,
 				14B472A92C28688F0058639D /* Assets.xcassets */,
 				14B472AB2C28688F0058639D /* LaunchScreen.storyboard */,
 				14B472AE2C28688F0058639D /* Info.plist */,
 			);
-			path = DodoApp;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		14B472C12C293DB60058639D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				14B472C22C293E060058639D /* UIView+Shadow.swift */,
+				14B472C42C293E230058639D /* UITableView+reuseID.swift */,
+				14B472C62C293E550058639D /* UITableView+dequeueCell.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +220,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14B472A52C28688C0058639D /* ViewController.swift in Sources */,
+				14B472C32C293E060058639D /* UIView+Shadow.swift in Sources */,
+				14B472C72C293E550058639D /* UITableView+dequeueCell.swift in Sources */,
+				14B472C52C293E230058639D /* UITableView+reuseID.swift in Sources */,
+				14B472A52C28688C0058639D /* MenuScreenVC.swift in Sources */,
+				14B472B92C29395F0058639D /* ProductCell.swift in Sources */,
+				14B472BC2C29399C0058639D /* Product.swift in Sources */,
 				14B472A12C28688B0058639D /* AppDelegate.swift in Sources */,
 				14B472A32C28688C0058639D /* SceneDelegate.swift in Sources */,
+				14B472BF2C2939CB0058639D /* ProductsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +381,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DodoApp/Info.plist;
+				INFOPLIST_FILE = DodoApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -324,7 +412,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DodoApp/Info.plist;
+				INFOPLIST_FILE = DodoApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
